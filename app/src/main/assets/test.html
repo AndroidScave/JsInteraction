@@ -1,0 +1,17 @@
+<body>
+<input type="text" value="我是一个编辑框" id="edit"></input>
+<input type="submit" value="Toast编辑框内容"></input>
+<script>
+    function useJs(text){
+    	document.getElementById("msg").innerHTML=text;
+    }
+    var btn = document.getElementsByTagName('input')[1];
+    btn.addEventListener('click', function(){
+		     useToast.toast(document.getElementById('edit').value);
+        return false;
+    }, false);
+    </script>
+<p></p>
+<div id="msg">
+</div>
+</body>
